@@ -14,7 +14,8 @@ username: admin password: password           username: user password: password
 ### Employee Edit/Add Form With Error Handling
 ![From Part 1](image-2.png)
 ![Form Part 2](image-3.png)
-
+### Employees Summary Report
+![alt text](image-7.png)
 ## Project Description
 A full-stack web application that creates, lists, modifies and deletes employees and summarises employees data.
 
