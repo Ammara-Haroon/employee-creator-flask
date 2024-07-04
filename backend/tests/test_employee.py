@@ -2,12 +2,13 @@ from flask_sqlalchemy import SQLAlchemy
 import pytest
 from app import app as app2
 from app import db as db2
+from tests import TEST_DB_URI
 @pytest.fixture()
 def app():
     app2.config.update({
         "TESTING": True,
         'SQLALCHEMY_DATABASE_URI':\
-           'postgresql://postgres:raffay238@localhost:5433/test_db'
+           TEST_DB_URI
     })
     yield app2
 

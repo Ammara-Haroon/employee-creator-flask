@@ -8,9 +8,9 @@ from sqlalchemy import create_engine
 import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
-from app.routes.config import url
-from app.routes.config import password
-from app.routes.config import user
+from app.routes import url
+from app.routes import password
+from app.routes import user
 
 spark = SparkSession.builder \
     .appName("PostgreSQL Connection with PySpark")\
