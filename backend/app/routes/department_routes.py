@@ -1,7 +1,6 @@
-from flask import jsonify, request
-from app import app
+from flask import app, jsonify, request
 from app.models.department import Department
-from app import db
+from app import app,db
 from flask_restful import marshal_with
 from flask_validators import validate_db
 from app.schemas.department_schema import DepartmentSchema

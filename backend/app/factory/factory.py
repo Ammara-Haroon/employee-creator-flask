@@ -3,7 +3,7 @@ from faker import Faker
 import numpy
 from app import db
 from app.models.employee import Contract_Type, Employee, Employment_Type
-from backend.app.models.department import Department
+from app.models.department import Department
 
 
 def employee_factory():
