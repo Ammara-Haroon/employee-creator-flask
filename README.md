@@ -37,6 +37,16 @@ POSTGRESQL (Database)
 ### Backend
 - Backend is build with flask
 - Summaries are generated using PySpark
+- Basic form login authentication is done through data about role and authenticaton coming from the server. Two users with role "user" and "admin" are defined in memory. 
+- Used Flask Marshmallow Schema to validate request data coming from frontend
+- Used Flask Validators to uphold uniqueness constraint for department name
+- Used Flask Restful library to perform data marshalling for response data
+- Used FlaskSQLAlchemy as Object Relational Mapper (ORM) and to filter and sort employees 
+
+ ### Testing
+  - *Pytest* is used for backend testing. 
+  - *React Tetsing Libarary* and *Vitest* are used for front end testing
+
 ## Features
 - _Authenticates_ the user before giving him access to the dashboard
 - The users can have a "user" _role_ or an "admin" role. 
@@ -46,7 +56,17 @@ POSTGRESQL (Database)
 - _Search_ is available for names
 - _Sorting_ by names is also available  
 - _Responsive_ frontend- The columns of the table disappear as the screen size becomes smaller.
-- Report that summarises employee data
+- Report that summarises employees' data
+- Data is cleaned up before saving it to the database
 
+## Change logs
+### 29/07/2024 - Setup backend routes and code
+### 30/07/2024 - Integerated with frontend
+### 01/07/2024 - Integerated PySpark Report
+### 02/07/2024 - Added unit tests
+### 05/07/2024 - Added more unit tests
+### 08/07/2024 - Updated ReadMe
 
-
+# Related Project
+https://github.com/Ammara-Haroon/employee-creator
+This project was built earlier with a java spring backend.
